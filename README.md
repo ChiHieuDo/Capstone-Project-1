@@ -8,39 +8,31 @@
 
 ---
 
-## 🧩 Project Description
+## 🧩 Project Overview
 
-This project is a Python-based **host programmer tool** for STM32 bootloader communication, designed as part of a capstone project to demonstrate embedded systems integration and serial protocol handling. It is based on the open-source project by [@niekiran](https://github.com/niekiran/BootloaderProjectSTM32) and customized to fit our educational requirements.
+This project is part of our capstone course EE2421 and demonstrates practical understanding of embedded systems and UART-based bootloader communication.
 
-The system enables a host PC to communicate with an STM32 board over UART, sending commands such as:
+We use the **original implementation** from the open-source project by [@niekiran](https://github.com/niekiran/BootloaderProjectSTM32) to:
 
-- Retrieve bootloader version and chip ID
-- Flash memory erase (sector/mass)
-- Memory write using `.bin` files
-- Sector protection (read/write)
-- Jump to application address
-
----
-
-## ⚙️ Key Features
-
-- ✅ Command-line interface for sending bootloader commands
-- ✅ UART serial communication using `pyserial`
-- ✅ CRC32 checksum validation
-- ✅ Flash memory control from PC
-- ✅ Clear status feedback and debug logs
+- Upload firmware to STM32 via UART
+- Erase and write to flash memory
+- Handle read/write protection
+- Send commands to STM32 bootloader from a Python script
 
 ---
 
-## 🧰 Requirements
+## 📦 Project Contents
 
-- Python 3.7+
-- STM32F4 MCU (e.g., STM32F446RE) with a custom bootloader
-- USB-to-Serial connection (ST-LINK, USB UART, etc.)
-- Firmware binary file (`user_app.bin`)
-- Windows or Linux environment
+This repository contains:
 
-Install dependencies:
+- `STM32_Programmer_V1.py`: Python script to interface with STM32 bootloader
+- `user_app.bin`: Sample firmware for testing (provided separately)
+- Reference link: [BootloaderProjectSTM32 by niekiran](https://github.com/niekiran/BootloaderProjectSTM32)
 
-```bash
-pip install pyserial
+---
+
+## 📜 License & Attribution
+
+This project reuses code directly from [BootloaderProjectSTM32](https://github.com/niekiran/BootloaderProjectSTM32) by [@niekiran](https://github.com/niekiran). All rights and credits belong to the original author. We claim no modifications or authorship beyond educational usage.
+
+This repository is for **academic and non-commercial** use only.
