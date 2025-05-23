@@ -53,10 +53,6 @@ Using the provided Python script and STM32 bootloader firmware, you can:
 - Firmware binary file (`user_app.bin`)
 - Windows or Linux environment
 
-Install dependencies:
-
-```bash
-pip install pyserial
 
 ## 🙏 Credits
 
@@ -68,3 +64,8 @@ I only used it for academic and educational purposes.
 ## 📜 License
 
 Used under [the original repository’s terms](https://github.com/niekiran/BootloaderProjectSTM32). This version is for educational purposes only.
+
+## Install dependencies:
+
+```bash
+pip install pyserial
