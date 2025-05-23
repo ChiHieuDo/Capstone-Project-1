@@ -35,17 +35,33 @@ Using the provided Python script and STM32 bootloader firmware, you can:
 
 ---
 
+## ⚙️ Key Features
+
+- ✅ Command-line interface for sending bootloader commands
+- ✅ UART serial communication using `pyserial`
+- ✅ CRC32 checksum validation
+- ✅ Flash memory control from PC
+- ✅ Clear status feedback and debug logs
+
+---
+
+## 🧰 Requirements
+
+- Python 3.7+
+- STM32F4 MCU (e.g., STM32F446RE) with a custom bootloader
+- USB-to-Serial connection (ST-LINK, USB UART, etc.)
+- Firmware binary file (`user_app.bin`)
+- Windows or Linux environment
+
+Install dependencies:
+
+```bash
+pip install pyserial
+
 ## 🙏 Credits
 
 This project is fully credited to [@niekiran](https://github.com/niekiran) and his repository [BootloaderProjectSTM32](https://github.com/niekiran/BootloaderProjectSTM32).  
 I only used it for academic and educational purposes.
-
----
-
-## 🧑‍🎓 Author
-
-- **Name:** Dinh Viet Cuong  
-- **Role:** Student, sole contributor
 
 ---
 
