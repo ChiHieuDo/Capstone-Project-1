@@ -2,7 +2,7 @@
 
 ## 📚 Course Information
 - **Course:** EE2421 Capstone Project 1  
-- **Supervisor:** MSc. Bùi Quốc Bảo  
+- **Instructor:** MSc. Bùi Quốc Bảo  
 - **Semester:** 242  
 - **University:** Ho Chi Minh City University of Technology  
 
