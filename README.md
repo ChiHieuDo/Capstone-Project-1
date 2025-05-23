@@ -10,39 +10,37 @@
 
 ## 🧩 Project Description
 
-This project is a Python-based **host programmer tool** for STM32 microcontrollers, designed to communicate with a custom bootloader over UART. It enables the user to:
+This project is a Python-based **host programmer tool** for STM32 bootloader communication, designed as part of a capstone project to demonstrate embedded systems integration and serial protocol handling. It is based on the open-source project by [@niekiran](https://github.com/niekiran/BootloaderProjectSTM32) and customized to fit our educational requirements.
 
-- Upload firmware (`.bin` file)
-- Erase flash memory (sector or mass erase)
-- Write to memory addresses
-- Manage read/write protection for flash sectors
-- Retrieve microcontroller details like chip ID, bootloader version, RDP level
+The system enables a host PC to communicate with an STM32 board over UART, sending commands such as:
 
-It serves as a learning platform to understand:
-- Low-level embedded systems communication
-- Serial protocols
-- Bootloader architecture on STM32
+- Retrieve bootloader version and chip ID
+- Flash memory erase (sector/mass)
+- Memory write using `.bin` files
+- Sector protection (read/write)
+- Jump to application address
 
 ---
 
-## ⚙️ Features
+## ⚙️ Key Features
 
-- UART Serial Communication using `pyserial`
-- CRC32-based data integrity check
-- Command structure with length, payload, and CRC
-- Interactive command-line interface for issuing commands
-- Support for multiple STM32 bootloader commands
+- ✅ Command-line interface for sending bootloader commands
+- ✅ UART serial communication using `pyserial`
+- ✅ CRC32 checksum validation
+- ✅ Flash memory control from PC
+- ✅ Clear status feedback and debug logs
 
 ---
 
 ## 🧰 Requirements
 
 - Python 3.7+
-- STM32F4 (e.g., STM32F446RE) with custom bootloader flashed
-- USB-to-Serial connection (e.g., via ST-LINK or USB TTL)
-- A `.bin` firmware file (`user_app.bin`)
+- STM32F4 MCU (e.g., STM32F446RE) with a custom bootloader
+- USB-to-Serial connection (ST-LINK, USB UART, etc.)
+- Firmware binary file (`user_app.bin`)
+- Windows or Linux environment
 
-### Python dependencies:
+Install dependencies:
 
 ```bash
 pip install pyserial
