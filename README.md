@@ -10,29 +10,45 @@
 
 ## 🧩 Project Overview
 
-This project is part of our capstone course EE2421 and demonstrates practical understanding of embedded systems and UART-based bootloader communication.
+This project is my individual submission for the EE2421 Capstone Project. It demonstrates how to communicate with an STM32 microcontroller bootloader over UART using Python.
 
-We use the **original implementation** from the open-source project by [@niekiran](https://github.com/niekiran/BootloaderProjectSTM32) to:
-
-- Upload firmware to STM32 via UART
-- Erase and write to flash memory
-- Handle read/write protection
-- Send commands to STM32 bootloader from a Python script
+The implementation is **entirely based on the open-source project by [@niekiran](https://github.com/niekiran/BootloaderProjectSTM32)**. I have not modified the original code. My goal was to understand and apply the existing system to my STM32F4 development board for testing and learning purposes.
 
 ---
 
-## 📦 Project Contents
+## 💻 What This Project Does
 
-This repository contains:
+Using the provided Python script and STM32 bootloader firmware, you can:
 
-- `STM32_Programmer_V1.py`: Python script to interface with STM32 bootloader
-- `user_app.bin`: Sample firmware for testing (provided separately)
-- Reference link: [BootloaderProjectSTM32 by niekiran](https://github.com/niekiran/BootloaderProjectSTM32)
+- Read bootloader version, chip ID, and RDP status
+- Perform flash erase and memory writes
+- Enable/disable flash protection
+- Jump to user application code
 
 ---
 
-## 📜 License & Attribution
+## 📦 Files Used
 
-This project reuses code directly from [BootloaderProjectSTM32](https://github.com/niekiran/BootloaderProjectSTM32) by [@niekiran](https://github.com/niekiran). All rights and credits belong to the original author. We claim no modifications or authorship beyond educational usage.
+- `STM32_Programmer_V1.py`: Python host tool (used without modification)
+- STM32 bootloader C code: Built and flashed using Keil (from original repo)
+- `user_app.bin`: Test firmware (provided separately)
 
-This repository is for **academic and non-commercial** use only.
+---
+
+## 🙏 Credits
+
+This project is fully credited to [@niekiran](https://github.com/niekiran) and his repository [BootloaderProjectSTM32](https://github.com/niekiran/BootloaderProjectSTM32).  
+I only used it for academic and educational purposes.
+
+---
+
+## 🧑‍🎓 Author
+
+- **Name:** Dinh Viet Cuong  
+- **Role:** Student, sole contributor
+
+---
+
+## 📜 License
+
+Used under [the original repository’s terms](https://github.com/niekiran/BootloaderProjectSTM32). This version is for educational purposes only.
